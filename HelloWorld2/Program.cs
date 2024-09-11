@@ -13,6 +13,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.MapGet("/", () => "Hello World!");
+
+
+  
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
